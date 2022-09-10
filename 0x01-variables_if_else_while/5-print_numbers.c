@@ -11,7 +11,7 @@ int main(void)
 {
 	int d = 0;
 
-	while (d <58)
+	while (d < 58)
 	{
 		putchar(d;
 		d++;
