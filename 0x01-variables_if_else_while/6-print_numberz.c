@@ -9,10 +9,13 @@
  */
 int main(void)
 {
-	int d;
+	int d = 48;
 
-	for (d = '0'; d < '9'; d++)
+	while (d < 58)
+	{
 		putchar(d);
+		d++;
+	}
 	putchar('\n');
 	return (0);
 }
