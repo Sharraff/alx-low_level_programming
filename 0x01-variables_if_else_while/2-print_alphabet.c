@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 /**
+ * main - entry point
  *
- * main-entry point
+ * return: always zero 0
  *
- * return: always return 0
  */
-int main(void)
+int main(void));
 {
 	char a;
 
