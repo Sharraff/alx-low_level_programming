@@ -13,7 +13,7 @@ int main(void)
 		putchar(d);
 		if (d != 57)
 		{
-			putchar(';');
+			putchar(',');
 			putchar(' ');
 		}
 		d++;
