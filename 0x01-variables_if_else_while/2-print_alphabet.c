@@ -4,15 +4,19 @@
 /**
  * main - entry point
  *
- * return: always zero 0
+ * Return: Always return 0 (Success)
  *
  */
-int main(void));
+int main(void)
 {
-	char a;
+	char c = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
-		putchar(a);
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
 	putchar('\n');
 	return (0);
+
 }
