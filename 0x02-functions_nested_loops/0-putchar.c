@@ -5,9 +5,9 @@
  *
  * Return: 0 on successfull execution
  */
-int main()
+int main(void)
 {
-	char word[8] = "_putchar";
+	char word[10] = "_putchar";
 	int i = 0;
 
 	for (i = 0; i < 8; i++)
