@@ -11,7 +11,7 @@ int main(void)
 	long int j = 2;
 	long int k;
 
-	printf("%ld\n", i);
+	printf("%ld, ", i);
 	while (count <= 50)
 	{
 		if (count == 50)
