@@ -4,35 +4,42 @@
 *
 *Return: 0 0n successfull execution
 */
-void times_table(void) /* function head, prints times table*/
+void times_table(void)
 {
-	int i;
-	int j;
+	int x = 0;
+	int y;
+	int z;
 
-	for (i = 0; i <= 9; i++)
+	while (x < 0)
 	{
-		for (j = 0; j <= 9; i++)
-		{
-			int prod = i * j;
+		y = 0;
 
-			if (j == 0)
+		while (y < 0)
+		{
+			z = x * y;
+
+			if (z > 9)
 			{
-				_putchar('0');
+				_putchar((z / 10) + '0');
+				_putchar((z % 10) + '0');
 			}
-			else if (prod <= 9)
+			else if (y != 0)
 			{
-				_putchar(',');
 				_putchar(' ');
-				_putchar(prod + '0');
+				_putchar(z + '0');
 			}
 			else
 			{
+				_putchar(z + '0');
+			}
+			if (y != 9)
+			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar((prod / 10) + '0');
-				_putchar((prod % 10) + '0');
 			}
+			y++;
 		}
 		_putchar('\n');
+		x++;
 	}
 }
