@@ -4,7 +4,7 @@
 *
 *Return: 0 0n successfull execution
 */
-void time_table(void)
+void times_table(void)
 {
 	int x = 0;
 	int y;
