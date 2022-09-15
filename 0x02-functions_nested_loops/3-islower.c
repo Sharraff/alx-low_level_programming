@@ -8,13 +8,12 @@
  */
 int _islower(int c)
 {
-	char i;
-	int lower;
-
-	if (c >= 'a' && c <= 'z')
+	if (c >= 97 && c <= 123)
 	{
-		if (i == c)
-			lower = 1;
+		return (1);
 	}
-	return (lower);
+	else
+	{
+		return (0);
+	}
 }
