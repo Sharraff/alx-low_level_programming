@@ -1,4 +1,5 @@
-#include <main.h>
+#include "main.h"
+
 /**
  * main - test function that prints if a numer is positive or negative
  *
