@@ -14,11 +14,11 @@ int main(void)
 	{
 		if (i % 3 == 0)
 		{
-			printf('Fizz');
+			printf("Fizz");
 		}
 		if (i % 5 == 0)
 		{
-			printf('Buzz');
+			printf("Buzz");
 		}
 		else
 		{
@@ -26,9 +26,9 @@ int main(void)
 		}
 		if (i != 100)
 		{
-			printf(' ');
+			printf(" ");
 		}
-		printf('\n');
+		printf("\n");
 		return (0);
 	}
 }
