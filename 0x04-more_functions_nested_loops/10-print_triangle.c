@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_triangles - prints triangle using "#" character of a given size
+ * print_triangle - prints triangle using "#" character of a given size
  * @size: size of triangle
  * Return: Always 0
  */
-void print_triangles(int size)
+void print_triangle(int size)
 {
 	int i;
 	int j;
