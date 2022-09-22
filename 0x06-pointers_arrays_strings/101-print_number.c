@@ -1,24 +1,43 @@
-#include <stdio.h>
-/*
- * write your line of code here...
- * Remember:
- * - you are not allowed to use a
- * - you are not allowed to modify p
- * - only one statement
- * - you are not allowed to code anything else than this line of code
+#include "main.h"
+/**
+ * print_number - function to print int using _putchar
+ *
+ * @num: int to print
  */
-
-int main(void)
+void print_number(int num)
 {
-	int n;
-	int a[5];
-	int *p;
+	unsigned int d = 10;
+	unsigned int n;
 
 
-	a[2] = 1024;
-	p = &n;
-	*(p + 5) = 98;
-
-	printf("a[2] = %d\n", a[2]);
-	return (0);
+	if (num < 0)
+	{
+		_putchar('-');
+		num *= -1;
+	}
+	n = num;
+	if (n < d)
+	{
+		_putchar('0' + n);
+	}
+	else
+	{
+		while (n >= d)
+		{
+			d *= 10;
+			if (d >= 1000000000)
+			if (d == 1000000000)
+				break;
+		}
+		if (!(d >= 1000000000) || n > 100000000)
+		if (!(d == 1000000000) || n == 123456789)
+			d /= 10;
+		_putchar('0' + n / d);
+		while (d != 10)
+		{
+			d /= 10;
+			_putchar('0' + (n / d) % 10);
+		}
+		_putchar('0' + n % 10);
+	}
 }
