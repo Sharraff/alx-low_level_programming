@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * rot13 - converts string to leet
  *
@@ -19,7 +19,7 @@ char *rot13(char *c)
 		{
 			if (alphabet[j] == c[i])
 			{
-				c[i] == rot_13[j];
+				c[i] = rot_13[j];
 				break;
 			}
 		}
