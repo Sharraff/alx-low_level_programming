@@ -16,7 +16,7 @@ int print_s(va_list a);
  */
 typedef struct op
 {
-		char *c;
-			int (*f)(va_list a);
+	char *c;
+	int (*f)(va_list a);
 } printer;
 #endif
