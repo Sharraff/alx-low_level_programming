@@ -9,7 +9,7 @@
  */
 size_t list_len(const list_t *h)
 {
-	char *str;
+
 	int i = 0;
 	unsigned int count = 0;
 
