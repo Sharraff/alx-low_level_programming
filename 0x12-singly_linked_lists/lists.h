@@ -1,8 +1,6 @@
 #ifndef -LIST_H
 #define _LIST_H
-
-
-
+#include <stdlib.h>
 
 /**
  *list_t - structure containing elements of node of the linked list
