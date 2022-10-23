@@ -5,7 +5,7 @@
  *list_len - this function counts the number of elements in a list.
  *
  *@h: pointer to next element of node
- *Return: return count
+ *Return: return count.
  */
 size_t list_len(const list_t *h)
 {
