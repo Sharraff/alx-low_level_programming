@@ -1,9 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 
 /**
@@ -17,9 +15,9 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fd;
-	ssize_t r;
-	ssize_t w;
+	int fd;
+	int r;
+	int w;
 	char *buffer;
 
 	if (filename == NULL)
@@ -32,13 +30,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	r = read(fd, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if (o == -1 || r == -1 || w == -1 || w != r)
+	if (fd == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(buffer);
 		return (0);
 	}
 	free(buffer);
-	close(o);
+	close(fd);
 
 	return (w);
 }
